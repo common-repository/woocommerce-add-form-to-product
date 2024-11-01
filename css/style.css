@@ -1,0 +1,127 @@
+.action-icon:before {
+	display: inline-block;
+	font: 400 20px/1 dashicons;
+	speak: none;
+	vertical-align: middle;
+	margin-left: 0;
+	margin-right: 6px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+h2.action-icon:before {
+	font-size: 30px;
+}
+h3.action-icon:before {
+	font-size: 22px;
+}
+ul.order_notes li .note_content {
+	padding: 10px;
+	background: #efefef;
+	position: relative;
+}
+
+ul.order_notes li .note_content:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -15px;
+	left: 30px;
+	width: 0;
+	height: 0;
+	border-width: 15px 15px 0 0;
+	border-style: solid;
+	border-color: #efefef transparent;
+}
+
+ul.order_notes li.customer-note .note_content:after {
+	border-color: #d7cad2 transparent;
+}
+
+ul.order_notes li p.meta {
+	padding: 10px;
+	color: #999;
+	margin: 0;
+	font-size: 11px;
+}
+
+.order_notes p {
+	margin-bottom: 0 !important;
+}
+
+#reportnote {
+	width: 250px;
+	height: 60px;
+}
+
+#manage_forms_container .wp-post-image {
+	float: right;
+	width: 200px;
+	height: 200px;
+}
+
+#manage_forms_container.awaiting-preview > #forms_container,
+#manage_forms_container.awaiting-approval > #forms_container,
+#manage_forms_container.preview-approved > #forms_container {
+	display: none;
+	float: none;
+	width: initial;
+}
+
+#manage_forms_container.awaiting-preview > #texts_container,
+#manage_forms_container.awaiting-approval > #texts_container,
+#manage_forms_container.preview-approved > #texts_container {
+	width: 100%;
+	float: none;
+}
+
+#manage_forms_container.awaiting-preview .wrapper,
+#manage_forms_container.awaiting-approval .wrapper,
+#manage_forms_container.preview-approved .wrapper {
+	padding: 0;
+}
+
+#approve-message {
+	display:none;
+}
+
+#approve-message {
+	padding: 10px 20px;
+	display: inline-block;
+	font-weight: bold;
+	border-radius: 6px;
+	text-transform: uppercase;
+	width: auto;
+}
+
+#approve-message.error{
+	color: white;
+	border: 1px solid red;
+	background: lightcoral;
+}
+
+#approve-message.success{
+	color: green;
+	border: 1px solid green;
+	background: lightgreen;
+}
+
+.af2p_action.bottom {
+	position: fixed;
+	bottom: 0;
+	background: black;
+	height: auto;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.7);
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+.af2p_action.bottom p {
+	margin: 0;
+}
+
+#sendtext-bottom {
+	color: #333;
+}
